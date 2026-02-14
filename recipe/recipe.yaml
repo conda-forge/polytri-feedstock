@@ -11,7 +11,7 @@ source:
   sha256: f01e3af16c847da88ad688d38fb31455747af6a80718cddd7b6f5979f1f982f3
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -56,14 +56,14 @@ about:
     PolyTri is a high-performance Delaunay triangulation library with support for
     constrained boundaries and hole removal. It provides both a Rust implementation
     (faster) and a Python implementation (fallback).
-    
+
     Features:
     - Fast Delaunay triangulation (Rust implementation)
     - Constrained boundary support
     - Hole removal
     - Python fallback implementation
   license: GPL-3.0-or-later
-  license_file: 
+  license_file:
     - LICENSE
     - THIRDPARTY.yml
   documentation: https://github.com/looooo/poly-tri
