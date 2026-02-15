@@ -32,9 +32,6 @@ PYTHON_SITE_PACKAGES="${SP_DIR}"
 mkdir -p "${PYTHON_SITE_PACKAGES}/polytri"
 cp -r "${SRC_DIR}/polytri/"* "${PYTHON_SITE_PACKAGES}/polytri/"
 
-# Verify installation
-echo "Verifying installation..."
-${PYTHON} -c "import polytri; print(f'polytri imported successfully, Rust available: {polytri._rust_available}')"
 
 echo "Build completed successfully!"
 

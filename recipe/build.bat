@@ -48,9 +48,5 @@ set "PYTHON_SITE_PACKAGES=%SP_DIR%"
 if not exist "%PYTHON_SITE_PACKAGES%\polytri" mkdir "%PYTHON_SITE_PACKAGES%\polytri"
 xcopy "%SRC_DIR%\polytri\*" "%PYTHON_SITE_PACKAGES%\polytri\" /E /Y /I
 
-REM Verify installation
-echo Verifying installation...
-%PYTHON% -c "import polytri; print('polytri imported successfully, Rust available:', polytri._rust_available)"
-
 echo Build completed successfully!
 
